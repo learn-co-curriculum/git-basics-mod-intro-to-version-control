@@ -17,6 +17,12 @@ Wouldn't it be great to have an easy way to share your documents with others as
 well as back them up to the cloud? These dreams can be achieved by using what
 programmers call "version control."
 
+## Objectives
+
+1. State what `git` is
+2. State what a _commit_ is
+3. Recognize how developers use _commits_ to discuss changes
+
 
 
 Version Control is the process of storing multiple versions of a single project, allowing each version to be recalled at a later date.
