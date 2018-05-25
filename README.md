@@ -1,4 +1,4 @@
-# Version Control 101
+# Introduction to Version Control
 
 ## Introduction: What Is Version Control?
 
