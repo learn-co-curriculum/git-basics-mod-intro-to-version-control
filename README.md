@@ -23,7 +23,15 @@ programmers call "version control."
 2. State what a _commit_ is
 3. Recognize how developers use _commits_ to discuss changes
 
+## Conclusion
 
+The `git` version control program provides a means for authors to create
+multiple "snapshots" of their work and review, annotate, and discuss it.
+Effectively, `git` creates a journal of changes to their files. Each "journal
+entry" is called a _commit_ and has a unique identifier assigned to it called a
+"SHA" (pronounced: "Shah"). With this basic conceptual model in place, we will
+proceed to teach you to use `git`.
+#===============================================================================
 
 Version Control is the process of storing multiple versions of a single project, allowing each version to be recalled at a later date.
 
