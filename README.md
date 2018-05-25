@@ -4,6 +4,21 @@
 
 > “The past is never where you think you left it.” — [Katherine Anne Porter](http://en.wikipedia.org/wiki/Katherine_Anne_Porter)
 
+## Problem Statement
+
+Most people have recognized a point in life where they had a choice: to do
+something risky or to do something safe and have often said "YOLO, do the risky
+thing"...and regretted it. Life, sadly has no undo button.
+
+Wouldn't it be great if you could try things out in "sandbox" and then throw it
+away, with no consequence, if it didn't work out? Wouldn't it be great to have
+a history of your thought process or motivations as you wrote a document?
+Wouldn't it be great to have an easy way to share your documents with others as
+well as back them up to the cloud? These dreams can be achieved by using what
+programmers call "version control."
+
+
+
 Version Control is the process of storing multiple versions of a single project, allowing each version to be recalled at a later date.
 
 There are a lot of different ways to do version control. You could save a new file every time you make a change, timestamp that file, and place all of those files into a timestamped folder. You could track all of your changes in a spreadsheet with copious notes. Or you could use dedicated version control software. Guess which method programmers use?
