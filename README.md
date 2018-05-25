@@ -1,28 +1,38 @@
 # Introduction to Version Control
 
-## Introduction: What Is Version Control?
-
 > “The past is never where you think you left it.” — [Katherine Anne Porter](http://en.wikipedia.org/wiki/Katherine_Anne_Porter)
 
 ## Problem Statement
 
-Most people have recognized a point in life where they had a choice: to do
-something risky, or to do something safe and have often said "YOLO, do the risky
-thing"...and regretted it. Life, sadly has no undo button.
+Most people have reached a point in life where they had a choice: to do
+something risky or to do something safe and have said "YOLO, do the risky
+thing!"
+
 ![You tried to ford the river, didn't you?](https://curriculum-content.s3.amazonaws.com/web-development/git-version-control-101/choices.gif "You tried to ford the river, didn't you?")
+
+...and regretted it.
+
+![Bad Crossing](https://curriculum-content.s3.amazonaws.com/web-development/git-version-control-101/11-21-10-bad-river-cross.gif "Regret")
+
+Life, sadly, has no undo button.
 
 Wouldn't it be great if you could try things out in "sandbox" and then throw it
 away, with no consequence, if it didn't work out? Wouldn't it be great to have
 a built-in journal, that you wrote, of your motivations and thought process
-around each edit?  Wouldn't it be great to have an easy way to share your
-documents with others as well as back them up to the cloud?
+around each experience that you could use to help you become smarter?  Wouldn't
+it be great to be able to share your experience with others but not require
+them into integrate it into their own personal history?
 
-Alternatively, have you ever collaborated on a document with a number of
-friends or colleagues and rapidly found yourself drowning in a sea of
-`report-john.docx`, `report-mary-undo-john.docx`,
-`report-mary-and-john-FINAL2.docx`? There is a better way!
+You can't do this with reality, but you can with code!
 
-These dreams can be achieved by using what programmers call "version control."
+OK, so maybe you're perfect and have never made a regrettable choice (good for
+you!). Have you ever collaborated on a document with a number of friends or
+colleagues and rapidly found yourself drowning in a sea of `report-john.docx`,
+`report-mary-undo-john.docx`, `report-mary-and-john-FINAL2.docx`? There is a
+better way!
+
+This improved type of existence can be achieved, for plaintext files anyway,
+by using what programmers call "version control."
 
 ## Objectives
 
