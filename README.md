@@ -12,16 +12,60 @@ thing"...and regretted it. Life, sadly has no undo button.
 
 Wouldn't it be great if you could try things out in "sandbox" and then throw it
 away, with no consequence, if it didn't work out? Wouldn't it be great to have
-a history of your thought process or motivations as you wrote a document?
-Wouldn't it be great to have an easy way to share your documents with others as
-well as back them up to the cloud? These dreams can be achieved by using what
-programmers call "version control."
+a built-in journal, that you wrote, of your motivations and thought process
+around each edit?  Wouldn't it be great to have an easy way to share your
+documents with others as well as back them up to the cloud?
+
+Alternatively, have you ever collaborated on a document with a number of
+friends or colleagues and rapidly found yourself drowning in a sea of
+`report-john.docx`, `report-mary-undo-john.docx`,
+`report-mary-and-john-FINAL2.docx`? There is a better way!
+
+These dreams can be achieved by using what programmers call "version control."
 
 ## Objectives
 
 1. State what `git` is
 2. State what a _commit_ is
 3. Recognize how developers use _commits_ to discuss changes
+4. Recognize that local commit history can be stored remotely
+
+## State what `git` is
+
+Version Control is the process of storing multiple versions of a single
+project, allowing each version to be recalled at a later date. There are many
+version control programs: `git`, `hg`, `svn`, `cvs` et al. The most-popular
+version control system is `git`.
+
+The Linux operating system was the first project to embrace `git`. Upon seeing
+that team's success using `git` for version control, much of the industry chose
+to follow.
+
+## State what a _commit_ is
+
+As you work on a document you reach a natural "pause." At this point, much like
+when playing a video game and preparing to face a big, bad, boss battle you'd
+like to save a snapshot of your work. `git` calls this "snapshot" a **commit**.
+
+Ultimately, by creating a "journal" or "log" of commits, `git` can present a
+history of your changes to your work.
+
+## Recognize How Developers Use _commits_ To Discuss Changes
+
+Additionally, for each commit, `git` assigns a special guaranteed-unique
+identifier called a "SHA" (pronounced: "shah"). With each commit, `git` will
+ask you to write a short journal entry called a "commit message" that
+describes the change you made. The sum total of all `git` commits is the _git
+history_ of the project.
+
+As a result of having a series of "commits" developers can talk about choices
+that were made and can collaborate.
+
+## Recognize That Local Commit History Can Be Stored Remotely
+
+To make it easy to back up (and, as you'll discover later, share) git
+histories, git allows authors to copy (or, in `git`'s vocabulary _push_) git
+histories to remote computers.
 
 ## Conclusion
 
@@ -31,33 +75,6 @@ Effectively, `git` creates a journal of changes to their files. Each "journal
 entry" is called a _commit_ and has a unique identifier assigned to it called a
 "SHA" (pronounced: "Shah"). With this basic conceptual model in place, we will
 proceed to teach you to use `git`.
-#===============================================================================
-
-Version Control is the process of storing multiple versions of a single project, allowing each version to be recalled at a later date.
-
-There are a lot of different ways to do version control. You could save a new file every time you make a change, timestamp that file, and place all of those files into a timestamped folder. You could track all of your changes in a spreadsheet with copious notes. Or you could use dedicated version control software. Guess which method programmers use?
-
-## Why Use Version Control?
-
-Let's think about the future for a second. It's a year or two down the road, and you're working at your dream job (YAY!). You just deployed a new chat feature for the app you're working on. Suddenly, your boss runs over to your desk: "Wait! We can't deploy the chat yet! Revert! Revert!"
-
-What do you do? You need to find all of the new code you pushed to the server and delete it. Then you need to find the old code, test it, and re-upload it. So much work to do. Well, since you used version control software, it's as easy as 1, 2, 3. Actually, it's as easy as `git reset --hard <commit id>`... but we'll get to that later. Using version control is useful because it allows you to easily rollback to a previous version of your application, saving you a ton of extra work and time.
-
-There are a lot of advantages to version control. It's a great way to keep a backup of your work, it facilitates collaboration, and it gives you the freedom to experiment and try new things without messing up the code base.
-
-## Local vs Remote Version Control
-
-A local version control system stores all of the information on your computer, locally. This system works great while you work on a project by yourself. However, it becomes cumbersome when you attempt to collaborate.
-
-Some organizations use a centralized repository on a company server. Think of a repository as a big folder that stores all of the files of a particular project. It is simply the location where a project's data is stored. Users pull only the files they need to work on from the server. The advantage is that multiple people can collaborate and work on the same project at once. The disadvantage to this process is that a user must be connected to the network in order to work on the project.
-
-Which brings us to the third system, a distributed version control system. In a distributed system, all users have a complete copy of the entire repository. This means that you can work on the project independent of any network connection. Upon reconnecting, you can push your changes to the server and merge with the server's repository.
-
-## Meet Git
-
-Git is the distributed version control system we use here at The Flatiron School. Git began in 2005 and has quickly grown to be one of the most widely used version control systems in the industry. Because so many companies use Git, it's important that you get used to working with it. We also use GitHub, a popular remote repository hosting service built to integrate seamlessly with Git.
-
-Check out some of the resources below to learn more about Git.
 
 ## Resources
 
