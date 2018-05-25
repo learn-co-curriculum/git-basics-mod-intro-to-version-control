@@ -7,8 +7,9 @@
 ## Problem Statement
 
 Most people have recognized a point in life where they had a choice: to do
-something risky or to do something safe and have often said "YOLO, do the risky
+something risky, or to do something safe and have often said "YOLO, do the risky
 thing"...and regretted it. Life, sadly has no undo button.
+![alt text](https://curriculum-content.s3.amazonaws.com/curriculum-content/git-version-control-101/choices.gif "You tried to ford the river, didn't you?")
 
 Wouldn't it be great if you could try things out in "sandbox" and then throw it
 away, with no consequence, if it didn't work out? Wouldn't it be great to have
@@ -44,8 +45,10 @@ to follow.
 ## State what a _commit_ is
 
 As you work on a document you reach a natural "pause." At this point, much like
-when playing a video game and preparing to face a big, bad, boss battle you'd
-like to save a snapshot of your work. `git` calls this "snapshot" a **commit**.
+when playing a video game and preparing to strike off into the unknown, and potentiall face a big, bad, boss battle you'd like to save a snapshot of your 
+work. `git` calls this "snapshot" a **commit**.
+
+![alt text](https://curriculum-content.s3.amazonaws.com/curriculum-content/git-version-control-101/savepoint.png "Continue and save, or continue without save? That is the question.")
 
 Ultimately, by creating a "journal" or "log" of commits, `git` can present a
 history of your changes to your work.
@@ -65,7 +68,7 @@ that were made and can collaborate.
 
 To make it easy to back up (and, as you'll discover later, share) git
 histories, git allows authors to copy (or, in `git`'s vocabulary _push_) git
-histories to remote computers.
+histories to remote computers for access at another time or from another machine.
 
 ## Conclusion
 
