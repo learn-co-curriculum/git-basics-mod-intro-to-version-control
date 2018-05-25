@@ -55,7 +55,7 @@ to follow.
 ## State what a _commit_ is
 
 As you work on a document you reach a natural "pause." At this point, much like
-when playing a video game and preparing to strike off into the unknown, and potentiall face a big, bad, boss battle you'd like to save a snapshot of your 
+when playing a video game and preparing to strike off into the unknown, and potentiall face a big, bad, boss battle you'd like to save a snapshot of your
 work. `git` calls this "snapshot" a **commit**.
 
 ![Continue and save, or continue without save? That is the question.](https://curriculum-content.s3.amazonaws.com/web-development/git-version-control-101/savepoint.jpg "Continue and save, or continue without save? That is the question.")
