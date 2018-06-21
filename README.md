@@ -80,20 +80,21 @@ for jobs.
 ### Branching
 
 Most people have reached a point in life where they had a choice: to do
-something risky or to do something safe and have said "YOLO, do the risky
-thing!"
+something risky or to do something safe but slower.
 
-![You tried to ford the river, didn't you?](https://curriculum-content.s3.amazonaws.com/web-development/git-version-control-101/choices.gif "You tried to ford the river, didn't you?")
+![A Choice in "Oregon Trail" to ford the river](https://curriculum-content.s3.amazonaws.com/web-development/git-version-control-101/choices.gif "You tried to ford the river, didn't you?")
+
+Given the choice, they have said "YOLO, do the risky thing!"
+
+![A Bad Fording](https://curriculum-content.s3.amazonaws.com/web-development/git-version-control-101/11-21-10-bad-river-cross.gif "Regret")
 
 ...and regretted it.
-
-![Bad Crossing](https://curriculum-content.s3.amazonaws.com/web-development/git-version-control-101/11-21-10-bad-river-cross.gif "Regret")
 
 Life, sadly, has no undo button.  Wouldn't it be great if you could try things
 out in "sandbox" and then throw it away, with no consequence, if it didn't work
 out? "Branches" in `git` allow exactly this. You can propose "parallel
 universes" of code that can be compared, discussed, tried out, and ultimately
-kept or thrown away.
+imported or thrown away.
 
 ### Tracking "`diffs`"
 
