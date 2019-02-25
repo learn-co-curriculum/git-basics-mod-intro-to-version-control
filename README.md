@@ -4,7 +4,7 @@
 
 ## Problem Statement
 
-Have you created a document that you simply did not want to mess up? Maybe it
+Have you created a document that you absolutely ***did not*** want to mess up? Maybe it
 was a team project or a thesis?
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Finally, a chance to edit my paper! Let&#39;s open the folder.<br><br>draft<br>draftFinal<br>draftUpdateFinal<br>draftUpdateFinalFinal<br>draftUpdateFinalFinal2<br>draftUpdateFinalNew<br>finalDraftFinal<br>finalDraftFinalRevised<br>finalDraftFinalUpdate<br>newDraft<br>newDraft2<br>newDraftUpdate<br>revisedDraftFinal<br><br>Umm...</p>&mdash; Lego Grad Student (@legogradstudent) <a href="https://twitter.com/legogradstudent/status/979527370066579456?ref_src=twsrc%5Etfw">March 30, 2018</a></blockquote>
@@ -28,18 +28,51 @@ naming the versions in a way that captures:
 * The reason a new version was made, its _motivation_
 * The _time_ the new version was made
 
-But recording this in the file name is error-prone and, well, ugly. It also
-requires constant fiddling to update to the right file. We'd probably rather
-get a new version of `index.html` and hit refresh versus getting
-`index-20180619T0815.html` and navigating to it.
+But recording this in the file name is error-prone and, well, ugly.
+
+You could imagine a directory where all the files were named something like:
+
+```text
+index-20180619T0815.html
+index-20180619T0925.html
+index-20180620T1348.html
+```
+
+Where it's the base name of the file plus a unique `-TIME-STAMP` number and
+_then_ the file extension.
+
+When you use `ls` to list the contents of the directory they would be sorted in
+a time-appropriate order. You might even create a `LOGFILE` in the same
+directory that would record that `index-20180620T1348.html` was the update
+after the first client-review meeting, etc.
+
+Boy, wow, this is a lot of work!
+
+You are constantly trying to find the new time stamp (not something humans are
+great at) and always having to make sure you're creating a new, properly-named
+file. If you wanted to share this history of versions you'd have to copy and
+upload this whole big directory (like on Dropbox or Google Drive).
+
+What if another file needed a this file? We'd probably prefer to have the
+consuming file _always_ point to `index.html` versus having to keep updating
+the path with these new timestamps.
 
 Software that allows us to create multiple versions of the same file and to log
 _metadata_ ("data about the data") about the file (time created, intention behind
-the change) is called a Version Control System (VCS).
+the change) is called a Version Control System (VCS). While in the example just
+described ***you*** do all the maintenance, in a software VCS, the software
+helps you develop a consistent process for versioning the files you care about.
 
 We will learn the [`git`][git-getstarted] VCS. Other VCS systems are Mercurial
 (program-name: `hg`), Subversion (program-name: `svn`), and CVS (program-name:
 `cvs`).
+
+>**IMPORTANT**: Git _is not_ GitHub. Once upon a time some individuals in San
+>Francisco thought, "Hey, instead of people sharing Git directories through
+>private servers or Google Drive or Dropbox, why don't _we_ host a site that
+>lets people share Git directories (or "repositories")?" The site, that uses
+>the Git program's rules for creating versions of files is GitHub, the VCS is
+>Git. Git could exist without GitHub, but GitHub would not work without Git.
 
 ## Compare and Contrast VCS And Tracked Changes In Files
 
@@ -51,7 +84,7 @@ advantages.
 Google Docs' and Word's snapshots don't allow us to record _motivation_.
 They're also limited because they're the history of only _one_ file. Version
 Control Systems (VCS) allow us to create, review, and share snapshots of whole
-_projects_.
+_projects_: directories of directories full of files.
 
 A VCS can record in one place:
 
@@ -63,7 +96,7 @@ A VCS can record in one place:
   * Deleted `project-poodle-coming-soon.html`
 * What **time** that change was recorded
 * What the **motivation** behind the change was: "Launch project Poodle, an app to
-  spread the joy and love of poodle-ownership via the web!"
+  spread the joy and love of poodle-companionship via the web!"
 
 Not only does `git` provide basic version control, it has many other features.
 
@@ -71,11 +104,16 @@ Not only does `git` provide basic version control, it has many other features.
 
 While `git` allows you to record versions of your projects, that's just the tip
 of the iceberg. We'll cover some of its most important features at a very high
-level. The point here isn't to necessarily understand the mechanics and
-commands, but to appreciate the work that `git` helps make easy. Because it
-makes saving work, recovering, experimenting with ideas, and integrating
-feedback so easy, it's no wonder `git` is regularly listed as a required skill
-for jobs.
+level. Git has ***tons*** of features and it can be really scary when you're
+first learning it.
+
+AT this point, we're not trying to understand all of Git's mechanics and
+commands, but to appreciate the work that `git` helps make easy and that it's a
+natural improvement on a practice many of us are already familiar with.
+
+Because it makes saving work, recovering, experimenting with ideas, and
+integrating feedback so easy, it's no wonder `git` is regularly listed as a
+required skill for developer jobs.
 
 ### Branching
 
@@ -93,8 +131,9 @@ Given the choice, they have said "YOLO, do the risky thing!"
 Life, sadly, has no undo button.  Wouldn't it be great if you could try things
 out in "sandbox" and then throw it away, with no consequence, if it didn't work
 out? "Branches" in `git` allow exactly this. You can propose "parallel
-universes" of code that can be compared, discussed, tried out, and ultimately
-imported or thrown away.
+universes" of code that branch off from "history up to this point." They can be
+compared, discussed, tried out, shared by friends and ultimately kept or thrown
+away.
 
 ### Tracking "`diffs`"
 
